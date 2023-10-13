@@ -11,9 +11,9 @@ export async function action({ request }){
         yearErr:null
     }
     const data = {
-        day: formData.get('day'),
-        month: formData.get('month'),
-        year: formData.get('year'),
+        day: parseInt(formData.get('day')),
+        month: parseInt(formData.get('month')),
+        year: parseInt(formData.get('year')),
     }   
 
     const isValid = isValidDate(data.day,data.month,data.year)

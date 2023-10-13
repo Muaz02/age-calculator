@@ -4,7 +4,6 @@ export default function isValidDate(d, m, y) {
     const MIN_VALID_YR = 100;
     const maxValidMonth =  currentdate.getMonth() + 1
     const maxValidDay = currentdate.getDate()
-    y = parseInt(y)
 
     function isLeap(year) 
     { 
