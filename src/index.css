@@ -1,0 +1,152 @@
+html,body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 8%);
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*form styling*/
+
+.age--form--container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#age--form {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 2.75em;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  padding-bottom: 3em;
+}
+
+.form--label {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.form--label h3 {
+  align-self: flex-start;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: .85rem;
+  margin-bottom: 0;
+  color: hsl(0, 1%, 44%);
+}
+
+.form--input {
+  -moz-appearance: textfield;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 8%);
+  padding: .7em 1.5em;
+  border-radius: .5em;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+.form--not--valid {
+  color: hsl(0, 100%, 67%);
+  font-size: .7rem;
+  margin-top: -3.5em;
+}
+
+.form--submit--btn {
+  align-self: center;
+  cursor: pointer;
+  margin-top: -.5em;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: none;
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.form--submit--btn:hover,
+.form--submit--btn:focus {
+  background-color: hsl(259, 92%, 67%);
+}
+
+.icon--arrow {
+  width: 50%
+}
+
+@media (min-width:500px){
+  #age--form {
+    justify-content: flex-start;
+  }
+
+  .form--label {
+    margin-right: .75em;
+    width: 28%;
+  }
+
+  .form--label h3 {
+    font-size: 1rem;
+  }
+
+  .form--input {
+    font-size: 1.25rem;
+    padding: .4em 1.5em;
+    border-radius: .25em;
+  }
+
+  .form--submit--btn {
+    width: 4.5em;
+    height: 4.5em;
+    margin-top: -2.7em;
+    align-self: flex-end;
+  }
+
+  .form--not--valid {
+    align-self: center;
+    font-size: 1.25rem;
+    position: fixed;
+    top: 10.85em;
+  }
+}
+
+/*displayed age design*/
+
+.age--container {
+  margin-top: 3.25em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.age--container h2 {
+  margin: 0;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.95rem;
+}
+
+.age--container span {
+  margin: 0;
+  font-size: 3rem;
+  margin-right: .25em;
+  color: hsl(259, 100%, 65%);
+}
+
+@media (min-width:500px) {
+  .age--container h2 {
+    font-size: 4.5rem;
+  }
+
+  .age--container span {
+    font-size: 4.75rem;
+  }
+}
