@@ -33,12 +33,7 @@ export default function Main(){
     function getAge(dd,mm,yy){
         const currentdate = new Date()
         const birthDate = new Date(`${mm}/${dd}/${yy}`)
-/*       const dateObj = {
-            day: String(currentdate.getDate()).padStart(2, '0'),
-            month: String(currentdate.getMonth() + 1).padStart(2, '0'),
-            year: currentdate.getFullYear(),
-        }
-*/
+
         const diffTime = Math.abs(currentdate - birthDate);
         const dayInSec = (1000 * 60 * 60 * 24);  
         const totalDays = Math.floor(diffTime/dayInSec);
