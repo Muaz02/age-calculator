@@ -15,9 +15,6 @@ export async function action({ request }){
         month: parseInt(formData.get('month')),
         year: parseInt(formData.get('year')),
     }   
-    if(year<100){
-        return null
-    }
     
     const isValid = isValidDate(data.day,data.month,data.year)
     
