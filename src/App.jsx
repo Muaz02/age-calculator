@@ -5,7 +5,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom"; 
-import Main, { action as ageFormAction } from './main';
+import Main, { action as ageFormAction } from './Main';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route>
