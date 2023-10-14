@@ -1,7 +1,6 @@
 export default function isValidDate(d, m, y) {
     const currentdate = new Date()
     const MAX_VALID_YR = currentdate.getFullYear(); 
-    const MIN_VALID_YR = 100;
     const maxValidMonth =  currentdate.getMonth() + 1
     const maxValidDay = currentdate.getDate()
 
@@ -11,9 +10,11 @@ export default function isValidDate(d, m, y) {
                  (year % 100 != 0)) || 
                  (year % 400 == 0)); 
     } 
+        if (y<100){
+            return false
+        }
 
-        if (y > MAX_VALID_YR ||  
-            y < MIN_VALID_YR) 
+        if (y > MAX_VALID_YR )
             return false; 
               
         if ( m < 1 || m > 12 || ((y == MAX_VALID_YR) && (m > maxValidMonth)) )
